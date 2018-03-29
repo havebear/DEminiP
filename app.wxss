@@ -1,0 +1,15 @@
+/*weui  */
+@import 'assets/css/weui.wxss';
+
+/*字体图标  */
+@import 'assets/css/iconfonts.wxss';
+
+/*公共样式  */
+@import 'assets/css/common.wxss';
+
+/*课程列表  */
+@import 'assets/css/course.wxss';
+
+page {
+  background-color: #f5f6f7;
+}

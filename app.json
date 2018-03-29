@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/course/course",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/test/test",
+    "pages/mine/mine",
+    "pages/course/course-detail/course-detail",
+    "pages/course/learn-page/learn-page",
+    "pages/test/test-detail/test-detail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "远程辅导",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/icons/home.png",
+        "selectedIconPath": "assets/icons/home_fill.png"
+      },
+      {
+        "pagePath": "pages/course/course",
+        "text": "课程",
+        "iconPath": "assets/icons/statistics.png",
+        "selectedIconPath": "assets/icons/statistics_fill.png"
+      },
+      {
+        "pagePath": "pages/test/test",
+        "text": "测评",
+        "iconPath": "assets/icons/river_tour.png",
+        "selectedIconPath": "assets/icons/river_tour_fill.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/icons/river_question.png",
+        "selectedIconPath": "assets/icons/river_question_fill.png"
+      }
+    ]
+  }
+}

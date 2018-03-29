@@ -1,0 +1,8 @@
+/* pages/course/learn-page/learn-page.wxss */
+
+.lp-video {
+}
+
+.lp-video video {
+  width: 100%;
+}

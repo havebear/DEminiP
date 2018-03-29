@@ -1,0 +1,47 @@
+<!--pages/course/course.wxml-->
+<!-- <view class='search-bar'>搜索栏</view> -->
+<view class='bgg-classify'>
+  <view class='bgg-classify-list'>
+    <view class='bgg-classify-item {{isAllClassify ? "active" : ""}}' bindtap='checkClassify' data-index='all'>
+      全部
+    </view>
+    <scroll-view scroll-y>
+      <view class='bgg-classify-item {{item.isActive ? "active" : ""}}' wx:for='{{classifyList}}' wx:key='item.id' bindtap='checkClassify' data-index='{{index}}'>
+        {{item.name}}
+      </view>
+    </scroll-view>
+  </view>
+  <view class='bgg-classify-content'>
+    <view class='bgg-classify-filter'>
+      <view>
+        <text>年级</text>
+        <view>全部
+          <text class='iconfont icon-unfold'></text> </view>
+      </view>
+      <view>
+        <text>排序</text>
+        <view>热度
+          <text class='iconfont icon-unfold'></text>
+        </view>
+      </view>
+    </view>
+    <scroll-view scroll-y>
+      <view class='courses'>
+        <navigator class='course' wx:for='{{courseList}}' wx:key='item.id' url="/pages/course/course-detail/course-detail?id={{item.id}}&title={{item.title}}&file={{item.file}}">
+          <view class='course-cover'>
+            <image src='{{item.file}}'></image>
+          </view>
+          <view class='course-content'>
+            <view class='course-title'>
+              {{item.title}}
+            </view>
+            <view class='course-info'>
+              <text>{{item.type}}</text>
+              <text>{{item.studyNumber}}人已学习</text>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </scroll-view>
+  </view>
+</view>
