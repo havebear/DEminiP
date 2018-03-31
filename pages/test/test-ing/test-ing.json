@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "测评中",
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#000000",
+  "disableScroll": true
+}

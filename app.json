@@ -1,14 +1,16 @@
 {
   "pages": [
-    "pages/course/course",
-    "pages/index/index",
-    "pages/logs/logs",
     "pages/test/test",
+    "pages/course/course",
+    "pages/logs/logs",
+    
     "pages/mine/mine",
     "pages/course/course-detail/course-detail",
     "pages/course/learn-page/learn-page",
     "pages/test/test-detail/test-detail",
-    "pages/test/test-ing/test-ing"
+    "pages/test/test-ing/test-ing",
+    "pages/review/review",
+    "pages/push/push"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -21,12 +23,6 @@
     "selectedColor": "#1296db",
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页",
-        "iconPath": "assets/icons/home.png",
-        "selectedIconPath": "assets/icons/home_fill.png"
-      },
-      {
         "pagePath": "pages/course/course",
         "text": "课程",
         "iconPath": "assets/icons/statistics.png",
@@ -35,6 +31,12 @@
       {
         "pagePath": "pages/test/test",
         "text": "测评",
+        "iconPath": "assets/icons/river_tour.png",
+        "selectedIconPath": "assets/icons/river_tour_fill.png"
+      },
+      {
+        "pagePath": "pages/push/push",
+        "text": "推送",
         "iconPath": "assets/icons/river_tour.png",
         "selectedIconPath": "assets/icons/river_tour_fill.png"
       },

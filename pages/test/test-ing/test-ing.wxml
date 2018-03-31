@@ -1,2 +1,43 @@
 <!--pages/test/test-ing/test-ing.wxml-->
-<text>pages/test/test-ing/test-ing.wxml</text>
+<view class='ti'>
+  <view class='ti-main'>
+    <scroll-view class='ti-content' scroll-y>
+      <view class='question-card'>
+        <view class='qc-description'>
+          {{testData[testIndex].d}}
+        </view>
+        <view class='qc-answers'>
+          <view wx:for="{{testData[testIndex].answers}}" wx:key="{{item.id}}" class='qc-answer {{item.isActive ? "active" : ""}}' data-index="{{index}}" bindtap='chooseAnswer'>
+            <view>{{letters[index]}}</view>
+            <view>{{item.text}}</view>
+          </view>
+        </view>
+        <view class='qc-remark' wx:if="{{testData[testIndex].remake}}">
+          <view class='qc-remark-title'>
+            Tip
+          </view>
+          <view class='qc-remark-content'>
+            {{testData[testIndex].remake}}
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class='ti-b-btn'>
+      <view class='ti-b-btn-item'>
+        <view hidden="{{testIndex == 0}}" data-type="0" bindtap='nextQuestion'>
+          <text class='iconfont icon-enterinto_fill'></text>
+        </view>
+      </view>
+      <view class='ti-b-btn-item'>
+        <view hidden="{{testIndex == testData.length - 1}}" data-type="1" bindtap='nextQuestion'>
+          <text class='iconfont icon-enterinto_fill'></text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <scroll-view class='ti-head' scroll-y>
+    <view wx:for="{{testData}}" wx:key="index" class='ti-no {{index == testIndex ? "active" : ""}}' data-index="{{index}}" bindtap='chooseQuestion'>
+      {{index + 1}}
+    </view>
+  </scroll-view>
+</view>

@@ -3,41 +3,43 @@
   <video src='http://183.134.39.164/1/w/f7b56984471b228693e7c3a53d437547.mp4?type=ppbox.launcher.vip&key=6b117451b161d5051a35ebeaa754c4d4'></video>
 </view>
 
-<view class='detail-item'>
-  <view class='detail-item-title'>
-    <text>课程目录</text>
-    <text class='iconfont {{isPickUp ? "icon-unfold" : "icon-packup"}} pickup' bindtap='pickUp'></text>
-  </view>
-  <view class='directorys' hidden='{{isPickUp}}'>
+<pick-up title="目录">
+  <view class='directorys'>
     <view class='directory' wx:for="{{directorys}}" wx:key="{{item.id}}">
       <text>{{item.title}}</text>
       <text class='iconfont icon-playon_fill'></text>
     </view>
   </view>
-</view>
+</pick-up>
 
 <view class='detail-item'>
   <view class='detail-item-title'>
     评论
   </view>
-  <view class='appraisals'>
-    <view class='appraisal' wx:for="{{appraisals}}" wx:key="{{item.id}}">
-      <image src='{{item.avatar}}' class='appraisal-avatar'></image>
+  <view class='reviews'>
+    <view class='review' wx:for="{{reviews}}" wx:key="{{item.id}}">
+      <image src='{{item.avatar}}' class='review-avatar'></image>
       <view>
-        <view class='appraisal-head'>
-          <view class='appraisal-info'>
-            <view class='appraisal-info-name'>{{item.userName}}</view>
-            <view class='appraisal-info-time'>发布于 {{item.time}}</view>
+        <view class='review-head'>
+          <view class='review-info'>
+            <view class='review-info-name'>{{item.userName}}</view>
+            <view class='review-info-time'>发布于 {{item.time}}</view>
           </view>
-          <view class='appraisal-action active'>
+          <view class='review-action active'>
             <text class='iconfont icon-praise_fill'></text>
             <text>{{item.count}}</text>
           </view>
         </view>
-        <view class='appraisal-content'>
+        <view class='review-content'>
           {{item.content}}
         </view>
       </view>
     </view>
+  </view>
+  <view class='load-more'>
+    <navigator class='load-more-btn' url='/pages/review/review?id=123'>
+      <text>查看更多评论</text>
+      <text class='iconfont icon-enter'></text>
+    </navigator>
   </view>
 </view>

@@ -11,6 +11,10 @@ page {
   flex-direction: column;
 }
 
+.items {
+  padding: 0 20rpx;
+}
+
 .search-bar {
   width: 100%;
   height: 80rpx;

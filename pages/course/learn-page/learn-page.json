@@ -1,4 +1,7 @@
 {
   "navigationBarTextStyle": "white",
-  "navigationBarBackgroundColor": "#000000"
+  "navigationBarBackgroundColor": "#000000",
+  "usingComponents": {
+    "pick-up": "/components/pick-up/pick-up"
+  }
 }

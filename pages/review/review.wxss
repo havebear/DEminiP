@@ -1,0 +1,6 @@
+/* pages/review/review.wxss */
+
+.review-box {
+  padding: 0 30rpx;
+  background-color: #fff;
+}

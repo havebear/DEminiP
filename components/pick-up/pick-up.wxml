@@ -1,0 +1,10 @@
+<!--components/pick-up/pick-up.wxml-->
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    <text>{{title}}</text>
+    <text class='iconfont {{isPickUp ? "icon-unfold" : "icon-packup"}} pickup' bindtap='pickUp'></text>
+  </view>
+  <view hidden='{{isPickUp}}'>
+    <slot></slot>
+  </view>
+</view>

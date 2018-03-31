@@ -66,59 +66,101 @@ Page({
     courseList: [
       {
         id: 0,
+        level: '初一',
         type: '语文',
         title: 'ES6快速入门',
-        studyNumber: 12,
+        count: 12,
         file: 'http://img1.mukewang.com/5a97d4000001d97906000338-590-330.jpg'
       },
       {
         id: 1,
+        level: '初一',
         type: 'C++',
         title: 'C++二十一天入门到精通',
-        studyNumber: 200,
+        count: 200,
         file: 'http://img1.mukewang.com/5a56fdb400017d0306000338-590-330.jpg'
       },
       {
         id: 2,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
       },
       {
-        id: 2,
+        id: 3,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
       },
       {
-        id: 2,
+        id: 4,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
       },
       {
-        id: 2,
+        id: 5,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
       },
       {
-        id: 2,
+        id: 6,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
       },
       {
-        id: 2,
+        id: 7,
+        level: '初一',
         type: '前端',
         title: '移动web开发适配秘籍Rem',
-        studyNumber: 123,
+        count: 123,
         file: 'http://img3.mukewang.com/5a2516840001a77006000338-590-330.jpg'
+      }
+    ],
+    levelIndex: 0,
+    levels: [
+      {
+        value: 0,
+        label: '全部'
+      },
+      {
+        value: 0,
+        label: '二年级'
+      },
+      {
+        value: 0,
+        label: '三年级'
+      },
+      {
+        value: 0,
+        label: '初一'
+      },
+      {
+        value: 0,
+        label: '高一'
+      }
+    ],
+    sortTypeIndex: 0,
+    sortTypes: [
+      {
+        value: 0,
+        label: '最新'
+      },
+      {
+        value: 0,
+        label: '热度'
       }
     ]
   },
@@ -126,7 +168,7 @@ Page({
   /**
    * 选择类别
    */
-  checkClassify: function (e) {
+  checkClassify(e) {
     let index = e.currentTarget.dataset.index;
     this.data.classifyList.forEach(item => {
       item.isActive = false;
@@ -138,6 +180,24 @@ Page({
       this.data.classifyList[index].isActive = true;
     }
     this.setData({ classifyList: this.data.classifyList })
+  },
+
+  /**
+   * 选择年级
+   */
+  selectLevel(e) {
+    this.setData({
+      levelIndex: e.detail.value
+    });
+  },
+
+  /**
+   * 选择年级
+   */
+  selectSortType(e) {
+    this.setData({
+      sortTypeIndex: e.detail.value
+    });
   },
 
   /**

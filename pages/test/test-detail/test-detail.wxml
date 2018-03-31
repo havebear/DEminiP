@@ -1,2 +1,80 @@
 <!--pages/test/test-detail/test-detail.wxml-->
-<text>pages/test/test-detail/test-detail.wxml</text>
+<view class='b-btn'>
+  <button type='primary' hover-class='active' bindtap='toTest'>开始测评</button>
+</view>
+<view class='detail-info'>
+  <view class="detail-info-title">{{title}}</view>
+  <view class='detail-info-description'>
+    ES6增加了很多新的语法，很多同学学习起来感觉很别扭，有时候也不理解新增加的语法有什么用，对ES6的学习也没有兴趣进而动力不足、学习效率不高。本课程通过ES3、ES5、ES6的对比去实现同一个问题，学员可以非常容易的理解和掌握ES6的强大并产生学习的兴趣。
+  </view>
+  <view class='detail-info-other'>
+    <text>类别：前端</text>
+    <text>题数：10</text>
+    <text>测评人数：231</text>
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    评测情况
+  </view>
+  <view class='td-data'>
+    <view class='td-data-item'>
+      <view class='td-data-item-score'>4.6</view>
+      <view class='td-data-item-name'>实用性</view>
+    </view>
+    <view class='td-data-item'>
+      <view class='td-data-item-score'>65</view>
+      <view class='td-data-item-name'>平均成绩</view>
+    </view>
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    讲师
+  </view>
+  <view class='detail-teacher-info'>
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='detail-teacher-info-cover' mode='aspectFill'></image>
+    <view>
+      <view class='detail-teacher-name'>兵哥哥</view>
+      <view class='detail-teacher-tag'>前端工程师</view>
+    </view>
+    <text class='iconfont icon-enter'></text>
+  </view>
+  <view class='detail-teacher-note'>
+    这是讲师寄语，本测评适合初一学生。
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    评价
+  </view>
+  <view class='reviews'>
+    <view class='review' wx:for="{{reviews}}" wx:key="{{item.id}}">
+      <image src='{{item.avatar}}' class='review-avatar'></image>
+      <view>
+        <view class='review-head'>
+          <view class='review-info'>
+            <view class='review-info-name'>{{item.userName}}</view>
+            <view class='review-info-time'>发布于 {{item.time}}</view>
+          </view>
+          <view class='review-action active'>
+            <text class='iconfont icon-praise_fill'></text>
+            <text>{{item.count}}</text>
+          </view>
+        </view>
+        <view class='review-content'>
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='load-more'>
+    <navigator class='load-more-btn' url='/pages/review/review?id=123'>
+      <text>查看更多评价</text>
+      <text class='iconfont icon-enter'></text>
+    </navigator>
+  </view>
+</view>

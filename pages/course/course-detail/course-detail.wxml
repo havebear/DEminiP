@@ -2,47 +2,48 @@
 <view class='b-btn'>
   <button type='primary' hover-class='active' bindtap='toStudy'>开始学习</button>
 </view>
-<view class='cd-head'>
+<!-- <view class='cd-head'>
   <image src='{{coverFile}}' class='cd-head-bg' mode='aspectFill'></image>
   <view>{{title}}</view>
-  <button>关注</button>
-</view>
-<view class='cd-info'>
-  <view class='cd-info-description'>
+  <button class='follow-btn'>关注</button>
+</view> -->
+<view class='detail-info'>
+  <view class='detail-info-cover'>
+    <image src='{{coverFile}}' class='cd-head-bg' mode='aspectFill'></image>
+  </view>
+  <view class="detail-info-title">{{title}}</view>
+  <view class='detail-info-description'>
     ES6增加了很多新的语法，很多同学学习起来感觉很别扭，有时候也不理解新增加的语法有什么用，对ES6的学习也没有兴趣进而动力不足、学习效率不高。本课程通过ES3、ES5、ES6的对比去实现同一个问题，学员可以非常容易的理解和掌握ES6的强大并产生学习的兴趣。
   </view>
-  <view class='cd-info-other'>
+  <view class='detail-info-other'>
     <text>类别：前端</text>
     <text>学习人数：231</text>
     <text>评分：8.0</text>
   </view>
 </view>
 
-<view class='detail-item'>
-  <view class='detail-item-title'>
-    课程目录
-  </view>
+<pick-up title="目录">
   <view class='directorys'>
-    <navigator class='directory' wx:for="{{directorys}}" url='/pages/course/learn-page/learn-page?id={{item.id}}' wx:key="{{item.id}}">
+    <navigator class='directory' wx:for="{{directorys}}" wx:key="{{item.id}}" url='/pages/course/learn-page/learn-page?id={{item.id}}'>
       <text>{{item.title}}</text>
       <text class='iconfont icon-playon_fill'></text>
     </navigator>
   </view>
-</view>
+</pick-up>
 
 <view class='detail-item'>
   <view class='detail-item-title'>
     讲师
   </view>
-  <view class='cd-teacher-info'>
-    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='cd-teacher-info-cover' mode='aspectFill'></image>
+  <view class='detail-teacher-info'>
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='detail-teacher-info-cover' mode='aspectFill'></image>
     <view>
-      <view class='cd-teacher-name'>兵哥哥</view>
-      <view class='cd-teacher-tag'>前端工程师</view>
+      <view class='detail-teacher-name'>兵哥哥</view>
+      <view class='detail-teacher-tag'>前端工程师</view>
     </view>
     <text class='iconfont icon-enter'></text>
   </view>
-  <view class='cd-teacher-note'>
+  <view class='detail-teacher-note'>
     这是讲师寄语，本课程适合小白，才怪叻。
   </view>
 </view>

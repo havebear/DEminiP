@@ -5,7 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    isPickUp: false,
     directorys: [
       {
         title: '课程介绍',
@@ -20,7 +19,7 @@ Page({
         id: '3'
       }
     ],
-    appraisals: [
+    reviews: [
       {
         id: 1,
         avatar: 'http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg',
@@ -99,10 +98,4 @@ Page({
   },
 
   // methods
-  pickUp() {
-    console.log(this.data.isPickUp);
-    this.setData({
-      isPickUp: !this.data.isPickUp
-    })
-  }
 })

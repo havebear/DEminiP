@@ -1,1 +1,6 @@
-{}
+{
+  "navigationBarTitleText": "测评",
+  "usingComponents": {
+    "pick-up": "/components/pick-up/pick-up"
+  }
+}

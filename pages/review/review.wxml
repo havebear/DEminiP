@@ -1,0 +1,24 @@
+<!--pages/review/review.wxml-->
+<view class='review-box'>
+  <view class='reviews'>
+    <view class='review' wx:for="{{reviews}}" wx:key="{{item.id}}">
+      <image src='{{item.avatar}}' class='review-avatar'></image>
+      <view>
+        <view class='review-head'>
+          <view class='review-info'>
+            <view class='review-info-name'>{{item.userName}}</view>
+            <view class='review-info-time'>发布于 {{item.time}}</view>
+          </view>
+          <view class='review-action active'>
+            <text class='iconfont icon-praise_fill'></text>
+            <text>{{item.count}}</text>
+          </view>
+        </view>
+        <view class='review-content'>
+          {{item.content}}
+        </view>
+      </view>
+    </view>
+  </view>
+
+</view>
