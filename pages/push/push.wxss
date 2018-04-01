@@ -1,1 +1,49 @@
 /* pages/push/push.wxss */
+
+page {
+  width: 100%;
+  height: 100%;
+}
+
+.push-content {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.pc-tab-nav {
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-bottom: 2rpx solid #f3f3f3;
+}
+
+.pc-tab-nav view {
+  height: 100rpx;
+  padding: 0 1em;
+  line-height: 100rpx;
+  font-size: 32rpx;
+  text-align: center;
+  color: #333;
+}
+
+.pc-tab-nav view.active {
+  color: #2878ff;
+}
+
+.pc-tab-content {
+  flex: 1;
+  height: 0;
+  box-sizing: border-box;
+  padding: 0 30rpx;
+  background-color: #fff;
+}
+
+.pc-tab-content scroll-view {
+  width: 100%;
+  height: 100%;
+}

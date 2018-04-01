@@ -1,15 +1,19 @@
 {
   "pages": [
-    "pages/test/test",
     "pages/course/course",
     "pages/logs/logs",
-    
     "pages/mine/mine",
     "pages/course/course-detail/course-detail",
     "pages/course/learn-page/learn-page",
     "pages/test/test-detail/test-detail",
-    "pages/test/test-ing/test-ing",
     "pages/review/review",
+    "pages/review/review-add/review-add",
+    "pages/test/test-result/test-result",
+    "pages/test/test-ing/test-ing",
+    "pages/test/test",
+    "pages/teacher/teacher",
+    "pages/test/test-list/test-list",
+    "pages/message/message",
     "pages/push/push"
   ],
   "window": {

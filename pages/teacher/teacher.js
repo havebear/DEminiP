@@ -1,28 +1,44 @@
-// pages/review/review.js
+// pages/teacher/teacher.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    reviews: [
+    courseList: [
+      {
+        id: 0,
+        level: '初一',
+        type: '语文',
+        title: 'ES6快速入门',
+        count: 12,
+        file: 'http://img1.mukewang.com/5a97d4000001d97906000338-590-330.jpg'
+      },
       {
         id: 1,
-        avatar: 'http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg',
-        userName: '兵哥哥',
-        time: '2018.3.28 13.45',
-        count: 123,
-        content: '我是评论内容，这个课程呢，难度：低级，中级，高级。',
-        isLike: true
+        level: '初一',
+        type: 'C++',
+        title: 'C++二十一天入门到精通',
+        count: 200,
+        file: 'http://img1.mukewang.com/5a56fdb400017d0306000338-590-330.jpg'
+      }
+    ],
+    tests: [
+      {
+        id: 0,
+        type: '语文',
+        level: '初一',
+        title: '语文常用词汇测试',
+        count: 12,
+        file: 'http://img1.mukewang.com/5a97d4000001d97906000338-590-330.jpg'
       },
       {
         id: 2,
-        avatar: 'http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg',
-        userName: '兵哥哥',
-        time: '2018.3.28 13.45',
-        count: 123,
-        content: '我是评论内容，这个课程呢，难度：低级，中级，高级。',
-        isLike: true
+        type: '语文',
+        level: '初一',
+        title: '语文常用词汇测试',
+        count: 12,
+        file: 'http://img1.mukewang.com/5a97d4000001d97906000338-590-330.jpg'
       }
     ]
   },
@@ -81,14 +97,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * methods
-   */
-  toReviewAdd() {
-    wx.navigateTo({
-      url: '/pages/review/review-add/review-add?id=1'
-    })
   }
 })

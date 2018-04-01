@@ -1,0 +1,6 @@
+/* pages/test/test-list/test-list.wxss */
+
+.tl-content {
+  padding: 0 30rpx;
+  background-color: #fff;
+}

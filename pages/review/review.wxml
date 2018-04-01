@@ -1,4 +1,8 @@
 <!--pages/review/review.wxml-->
+<view class='b-btn'>
+  <button type='primary' hover-class='active' bindtap='toReviewAdd'>评论</button>
+</view>
+
 <view class='review-box'>
   <view class='reviews'>
     <view class='review' wx:for="{{reviews}}" wx:key="{{item.id}}">

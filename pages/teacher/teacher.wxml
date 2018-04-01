@@ -1,0 +1,54 @@
+<!--pages/teacher/teacher.wxml-->
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    讲师
+  </view>
+  <view class='detail-teacher-info'>
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='dti-cover' mode='aspectFill'></image>
+    <view class='dti-content'>
+      <view class='dti-name'>兵哥哥</view>
+      <view class='dti-tag'>前端工程师 粉丝：123</view>
+    </view>
+    <view class='dti-action'>
+      <view class='dtia-follow-btn'>关注</view>
+    </view>
+  </view>
+  <view class='detail-teacher-note'></view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>课程</view>
+  <view class='items'>
+    <navigator class='item' wx:for='{{courseList}}' wx:key='item.id' url="/pages/course/course-detail/course-detail?id={{item.id}}&title={{item.title}}&file={{item.file}}">
+      <view class='item-cover'>
+        <image src='{{item.file}}'></image>
+      </view>
+      <view class='item-content'>
+        <view class='item-content-title'>
+          {{item.title}}
+        </view>
+        <view class='item-content-info'>
+          <text>{{item.type}} {{item.level}}</text>
+          <text>{{item.count}}人已学习</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>测评</view>
+  <view class='items'>
+    <navigator class='item' wx:for='{{tests}}' wx:key='item.id' url='/pages/test/test-detail/test-detail?id={{item.id}}&title={{item.title}}'>
+      <view class='item-content'>
+        <view class='item-content-title'>
+          {{item.title}}
+        </view>
+        <view class='item-content-info'>
+          <text>{{item.type}} {{item.level}}</text>
+          <text>{{item.count}}人已评测</text>
+        </view>
+      </view>
+    </navigator>
+  </view>
+</view>

@@ -1,0 +1,56 @@
+<!--pages/test/test-result/test-result.wxml-->
+<view class='b-btn'>
+  <button type='primary' hover-class='active' bindtap='toReviewAdd'>评价</button>
+</view>
+
+<pick-up title="得分">
+  <view class='tr-score'>
+    <view class='tr-score-num'>
+      89
+    </view>
+    <view class='tr-score-info'>
+      <view>
+        <text>正确率</text>
+        <text>89%</text>
+      </view>
+      <view>
+        <text>增加积分</text>
+        <text>3分</text>
+      </view>
+    </view>
+    <view class='tr-score-level'>
+      B+
+    </view>
+  </view>
+</pick-up>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    <text>答题情况</text>
+    <text class='iconfont icon-enter'></text>
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    讲师
+  </view>
+  <navigator class='detail-teacher-info' url="/pages/teacher/teacher?id=1">
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='dti-cover' mode='aspectFill'></image>
+    <view class='dti-content'>
+      <view class='dti-name'>兵哥哥</view>
+      <view class='dti-tag'>前端工程师 粉丝：123</view>
+    </view>
+    <view class='dti-action'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <view class='detail-teacher-note'>
+    小伙子表现不错
+  </view>
+</view>
+<!-- 
+<view class='modal'>
+  <view class='modal-assess'></view>
+  <view class='modal-bg'></view>
+</view> -->

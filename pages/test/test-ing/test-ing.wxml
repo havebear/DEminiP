@@ -1,4 +1,5 @@
 <!--pages/test/test-ing/test-ing.wxml-->
+<!--测评部分  -->
 <view class='ti'>
   <view class='ti-main'>
     <scroll-view class='ti-content' scroll-y>
@@ -22,22 +23,27 @@
         </view>
       </view>
     </scroll-view>
-    <view class='ti-b-btn'>
-      <view class='ti-b-btn-item'>
-        <view hidden="{{testIndex == 0}}" data-type="0" bindtap='nextQuestion'>
-          <text class='iconfont icon-enterinto_fill'></text>
-        </view>
+    <scroll-view class='ti-head' scroll-y>
+      <view wx:for="{{testData}}" wx:key="index" class='ti-no {{index == testIndex ? "active" : ""}}' data-index="{{index}}" bindtap='chooseQuestion'>
+        {{index + 1}}
       </view>
-      <view class='ti-b-btn-item'>
-        <view hidden="{{testIndex == testData.length - 1}}" data-type="1" bindtap='nextQuestion'>
-          <text class='iconfont icon-enterinto_fill'></text>
-        </view>
+    </scroll-view>
+  </view>
+  <view class='ti-b-btn'>
+    <view class='ti-b-btn-item'>
+      <view hidden="{{testIndex == 0}}" data-type="0" bindtap='nextQuestion'>
+        <text class='iconfont icon-enterinto_fill'></text>
+      </view>
+    </view>
+    <view class='ti-b-btn-item'>
+      <view hidden="{{testIndex == testData.length - 1}}" data-type="1" bindtap='nextQuestion'>
+        <text class='iconfont icon-enterinto_fill'></text>
+      </view>
+    </view>
+    <view class='ti-b-btn-item'>
+      <view bindtap='submit'>
+        <text class='iconfont icon-success'></text>
       </view>
     </view>
   </view>
-  <scroll-view class='ti-head' scroll-y>
-    <view wx:for="{{testData}}" wx:key="index" class='ti-no {{index == testIndex ? "active" : ""}}' data-index="{{index}}" bindtap='chooseQuestion'>
-      {{index + 1}}
-    </view>
-  </scroll-view>
 </view>

@@ -1,30 +1,11 @@
-// pages/review/review.js
+// pages/review/review-add/review-add.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    reviews: [
-      {
-        id: 1,
-        avatar: 'http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg',
-        userName: '兵哥哥',
-        time: '2018.3.28 13.45',
-        count: 123,
-        content: '我是评论内容，这个课程呢，难度：低级，中级，高级。',
-        isLike: true
-      },
-      {
-        id: 2,
-        avatar: 'http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg',
-        userName: '兵哥哥',
-        time: '2018.3.28 13.45',
-        count: 123,
-        content: '我是评论内容，这个课程呢，难度：低级，中级，高级。',
-        isLike: true
-      }
-    ]
+    makeScore: 1
   },
 
   /**
@@ -86,9 +67,14 @@ Page({
   /**
    * methods
    */
-  toReviewAdd() {
-    wx.navigateTo({
-      url: '/pages/review/review-add/review-add?id=1'
+  sliderMark(e) {
+    console.log(e);
+    this.setData({
+      makeScore: e.detail.value / 2
     })
+  },
+
+  submit() {
+    wx.navigateBack()
   }
 })

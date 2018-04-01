@@ -1,0 +1,18 @@
+/* pages/teacher/teacher.wxss */
+
+.dtia-follow-btn {
+  padding: 8rpx 30rpx;
+  color: #666;
+  border: 2rpx solid #666;
+  border-radius: 8rpx;
+}
+
+.dtia-follow-btn.avtive {
+  background-color: #2878ff;
+  color: #fff;
+  border-color: #2878ff;
+}
+
+.items {
+  padding-bottom: 10rpx;
+}

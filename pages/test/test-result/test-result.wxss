@@ -1,0 +1,31 @@
+/* pages/test/test-result/test-result.wxss */
+
+.tr-score {
+  display: flex;
+  align-items: center;
+  border-top: 2rpx dashed #f3f3f3;
+}
+
+.tr-score-num {
+  margin-right: 30rpx;
+  font-size: 100rpx;
+  font-weight: bold;
+}
+
+.tr-score-info {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.tr-score-level {
+  flex: 1;
+  width: 0;
+  font-size: 40rpx;
+  text-align: right;
+}
+
+.tr-remake {
+  padding: 30rpx 0;
+  font-size: 28rpx;
+  color: #666;
+}

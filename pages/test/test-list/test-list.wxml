@@ -1,15 +1,5 @@
-<!--pages/test/test.wxml-->
-<pick-up title="分类">
-  <scroll-view scroll-x class="sc-cats">
-    <navigator class='sc-cat' url="/pages/test/test-list/test-list?id=1">热门</navigator>
-    <navigator class='sc-cat' wx:for="{{cats}}" wx:key="{{item.id}}" url="/pages/test/test-list/test-list?id=1">
-      {{item.label}}
-    </navigator>
-  </scroll-view>
-</pick-up>
-
-<view class='detail-item'>
-  <view class='detail-item-title'>最新发布</view>
+<!--pages/test/test-list/test-list.wxml-->
+<view class='tl-content'>
   <view class='items'>
     <navigator class='item' wx:for='{{tests}}' wx:key='item.id' url='/pages/test/test-detail/test-detail?id={{item.id}}&title={{item.title}}'>
       <view class='item-content'>

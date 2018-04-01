@@ -1,4 +1,5 @@
 // pages/test/test-ing/test-ing.js
+import { wxLoading } from '../../../utils/util.js';
 Page({
 
   /**
@@ -162,5 +163,20 @@ Page({
     this.setData({
       testIndex: type == 0 ? index - 1 : index + 1
     })
+  },
+
+  submit() {
+    // wxLoading('提交中');
+    wx.showLoading({
+      title: '提交中',
+      mask: true
+    })
+
+    setTimeout(function () {
+      wx.hideLoading();
+      wx.navigateTo({
+        url: '/pages/test/test-result/test-result?id=1'
+      })
+    }, 2000)
   }
 })

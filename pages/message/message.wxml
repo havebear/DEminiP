@@ -1,0 +1,25 @@
+<!--pages/message/message.wxml-->
+<view class='detail-info'>
+  <view class='detail-item-title'>内容</view>
+  <view class='detail-info-description'>
+    ES6增加了很多新的语法，很多同学学习起来感觉很别扭，有时候也不理解新增加的语法有什么用，对ES6的学习也没有兴趣进而动力不足、学习效率不高。本课程通过ES3、ES5、ES6的对比去实现同一个问题，学员可以非常容易的理解和掌握ES6的强大并产生学习的兴趣。
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>
+    讲师
+  </view>
+  <navigator class='detail-teacher-info' url="/pages/teacher/teacher?id=1">
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='dti-cover' mode='aspectFill'></image>
+    <view class='dti-content'>
+      <view class='dti-name'>兵哥哥</view>
+      <view class='dti-tag'>前端工程师 粉丝：123</view>
+    </view>
+    <view class='dti-action'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <view class='detail-teacher-note'>
+  </view>
+</view>

@@ -1,0 +1,26 @@
+<!--pages/review/review-add/review-add.wxml-->
+<view class='b-btn'>
+  <button type='primary' hover-class='active' bindtap='submit'>提交</button>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>内容</view>
+  <view class='ra-content'>
+    <view class="weui-cell">
+      <view class="weui-cell__bd">
+        <textarea class="weui-textarea" placeholder="请输入文本" style="height: 5em" />
+        <view class="weui-textarea-counter">0/200</view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<view class='detail-item'>
+  <view class='detail-item-title'>实用性评分(只有测评进入此页面才有)</view>
+  <view class='ra-mark'>
+    <view class='ra-mark-slide'>
+      <slider bindchange="sliderMark" min="1" max="10" />
+    </view>
+    <view class='ra-mark-score'>{{makeScore}}</view>
+  </view>
+</view>
