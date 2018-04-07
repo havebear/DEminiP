@@ -1,0 +1,23 @@
+<!--pages/mine/my-follow/my-follow.wxml-->
+<view class='follows'>
+  <navigator class='detail-teacher-info' url="/pages/teacher/teacher?id=1">
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='dti-cover' mode='aspectFill'></image>
+    <view class='dti-content'>
+      <view class='dti-name'>兵哥哥</view>
+      <view class='dti-tag'>前端工程师 粉丝：123</view>
+    </view>
+    <view class='dti-action'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <navigator class='detail-teacher-info' url="/pages/teacher/teacher?id=1">
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' class='dti-cover' mode='aspectFill'></image>
+    <view class='dti-content'>
+      <view class='dti-name'>兵哥哥</view>
+      <view class='dti-tag'>前端工程师 粉丝：123</view>
+    </view>
+    <view class='dti-action'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+</view>

@@ -1,0 +1,6 @@
+/* pages/mine/my-test/my-test.wxss */
+
+.my-test {
+  padding: 0 30rpx;
+  background-color: #fff;
+}

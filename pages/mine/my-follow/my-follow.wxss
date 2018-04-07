@@ -1,0 +1,7 @@
+/* pages/mine/my-follow/my-follow.wxss */
+
+.detail-teacher-info {
+  padding: 30rpx;
+  background-color: #fff;
+  border-bottom: 2rpx solid #f3f3f3;
+}

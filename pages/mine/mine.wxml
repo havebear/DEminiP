@@ -1,2 +1,80 @@
 <!--pages/mine/mine.wxml-->
-<text>pages/mine/mine.wxml</text>
+<view class='mine-head'>
+  <view class='mh-cover'>
+    <image src='http://cdn.aixifan.com/dotnet/artemis/u/cms/www/201708/30161624zc6pqlpa.jpg' mode='aspectFill'></image>
+  </view>
+  <view class='mh-info'>
+    <view class='mhi-name'>兵哥哥</view>
+    <view class='mhi-other'>小学一年级</view>
+  </view>
+  <navigator class='mg-enter' url='/pages/apply/apply'>
+    <text>认证教师</text>
+    <text class='iconfont icon-enter'></text>
+  </navigator>
+</view>
+
+<view class='mine-count'>
+  <navigator class='mc-item' url="/pages/integral/integral">
+    <view class='mc-item-number'>123</view>
+    <view class='mc-item-name'>积分</view>
+  </navigator>
+  <navigator class='mc-item' url="/pages/mine/my-collection/my-collection">
+    <view class='mc-item-number'>23</view>
+    <view class='mc-item-name'>收藏</view>
+  </navigator>
+  <navigator class='mc-item' url="/pages/mine/my-follow/my-follow">
+    <view class='mc-item-number'>5</view>
+    <view class='mc-item-name'>关注</view>
+  </navigator>
+</view>
+
+<view class='mine-navs'>
+  <navigator class='mn-item' url="/pages/mine/edit-level/edit-level">
+    <view class='mni-left'>
+      <text class='iconfont icon-tools'></text>
+      <text>年级</text>
+    </view>
+    <view class='mni-right'>
+      <text>初一</text>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <navigator class='mn-item' url="/pages/mine/my-course/my-course">
+    <view class='mni-left'>
+      <text class='iconfont icon-createtask'></text>
+      <text>学习课程</text>
+    </view>
+    <view class='mni-right'>
+      <text>9</text>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <navigator class='mn-item' url="/pages/mine/my-test/my-test">
+    <view class='mni-left'>
+      <text class='iconfont icon-editor'></text>
+      <text>我的测评</text>
+    </view>
+    <view class='mni-right'>
+      <text>3</text>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <navigator class='mn-item' url="/pages/statistics/statistics">
+    <view class='mni-left'>
+      <text class='iconfont icon-dynamic'></text>
+      <text>查看统计</text>
+    </view>
+    <view class='mni-right'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+  <navigator class='mn-item' url="/pages/about/about">
+    <view class='mni-left'>
+      <text class='iconfont icon-eit'></text>
+      <text>关于我们</text>
+    </view>
+    <view class='mni-right'>
+      <text class='iconfont icon-enter'></text>
+    </view>
+  </navigator>
+</view>

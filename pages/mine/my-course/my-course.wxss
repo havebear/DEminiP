@@ -1,0 +1,6 @@
+/* pages/mine/my-course/my-course.wxss */
+
+.my-course {
+  padding: 0 30rpx;
+  background-color: #fff;
+}

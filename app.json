@@ -14,7 +14,16 @@
     "pages/teacher/teacher",
     "pages/test/test-list/test-list",
     "pages/message/message",
-    "pages/push/push"
+    "pages/push/push",
+    "pages/integral/integral",
+    "pages/about/about",
+    "pages/statistics/statistics",
+    "pages/mine/my-collection/my-collection",
+    "pages/mine/my-course/my-course",
+    "pages/mine/my-follow/my-follow",
+    "pages/mine/my-test/my-test",
+    "pages/apply/apply",
+    "pages/mine/edit-level/edit-level"
   ],
   "window": {
     "backgroundTextStyle": "light",

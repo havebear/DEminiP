@@ -1,1 +1,105 @@
 /* pages/mine/mine.wxss */
+
+.mine-head {
+  padding: 30rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mh-cover {
+  width: 120rpx;
+  height: 120rpx;
+  margin-right: 20rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.mh-cover image {
+  width: 100%;
+  height: 100%;
+}
+
+.mh-info {
+  flex: 1;
+  width: 0;
+}
+
+.mhi-name {
+  font-size: 36rpx;
+  color: #333;
+}
+
+.mhi-other {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.mg-enter {
+  padding: 30rpx 0 30rpx 30rpx;
+}
+
+.mg-enter text {
+  color: #999;
+  font-size: 28rpx;
+}
+
+.mine-content {
+  flex: 1;
+  height: 0;
+  background-color: #999;
+}
+
+.mine-count {
+  display: flex;
+  margin-bottom: 20rpx;
+}
+
+.mc-item {
+  width: 33.33%;
+  padding: 30rpx 0;
+  background-color: #fff;
+  text-align: center;
+  font-size: 32rpx;
+}
+
+.mc-item-name {
+  padding-top: 10rpx;
+  font-size: 28rpx;
+  color: #666;
+}
+
+.mine-navs {
+  margin-bottom: 20rpx;
+  background-color: #fff;
+}
+
+.mn-item {
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 32rpx;
+  color: #333;
+  border-bottom: 2rpx solid #f3f3f3;
+}
+
+.mn-item:last-child {
+  border: none;
+}
+
+.mni-left, .mni-right {
+  display: flex;
+  align-items: center;
+}
+
+.mni-left .iconfont {
+  margin-right: 10rpx;
+  font-size: 40rpx;
+}
+
+.mni-right {
+  font-size: 28rpx;
+  color: #999;
+}

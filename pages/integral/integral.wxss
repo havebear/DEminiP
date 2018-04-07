@@ -1,0 +1,4 @@
+/* pages/integral/integral.wxss */
+page {
+  background-color: #fff;
+}

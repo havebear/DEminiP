@@ -1,5 +1,4 @@
-/* pages/push/push.wxss */
-
+/* pages/mine/my-collection/my-collection.wxss */
 page {
   width: 100%;
   height: 100%;
